@@ -1,0 +1,10 @@
+.repeater-main{padding: 80px;}
+.repeater-img img{width: 505px;}
+
+@media only screen and (min-width: 1024px) {
+    .repeater-list{gap: 80px; margin-bottom: 80px;}
+    .repeater-list:last-child{margin-bottom: 0;}
+    .repeater-text{flex: 0 0 505px;}
+    .repeater-img{flex: 0 0 calc(100% - 585px);}
+
+}

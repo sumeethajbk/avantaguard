@@ -1,0 +1,15 @@
+.short-intro-section{position: relative; clear: both; width: 100%; overflow: hidden; background-color: #f5f5f5; z-index: -1;}
+.short-intro-bg{position: absolute; z-index: -1; display: flex; width: 100%; justify-content: center; top: -15px;}
+.short-intro-bg img{width: 713px; height: 600px;}
+.short-intro-wrap{padding: 80px 0;}
+.short-intro-main{position: relative;}
+.short-intro-lt h2 span{position: relative;}
+.short-intro-lt h2 span svg{position: absolute; bottom: 0; left: 0; content: ""; display: block;}
+.short-intro-row{padding: 80px 0 0; gap: 50px;}
+.short-intro-list{flex: 0 0 292px;}
+.short-intro-list img {margin: 0;}
+
+/* media starts here */
+.short-intro-main{display: flex; flex-wrap: wrap; width: 100%; gap: 60px}
+.short-intro-lt{flex: 0 0 394px;}
+.short-intro-rt{flex: 0 0 calc(100% - 454px); max-width: 636px;}

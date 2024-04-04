@@ -1,0 +1,14 @@
+
+@import url("../css/_short-intro-section.css");
+@import url("../css/_repeater-section.css");
+
+
+/* Tile section */
+.tile-main{padding: 40px 0;}
+.tile-row{ display: flex; flex-wrap: wrap;}
+.tile-list{width: 30.89%; margin: 0 0 0 3%;}
+.tile-list:nth-child(3n+1){margin-left: 0;}
+.tile-thumb{position: relative; overflow: hidden; height: 232px;  margin-bottom: 32px;}
+.tile-thumb img {border-radius: 8px;}
+.tile-txt h3{margin-bottom: 24px;}
+.tile-txt p{margin-bottom: 24px;}
