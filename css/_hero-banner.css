@@ -1,23 +1,10 @@
-.hero-banner-section{z-index: 1; clear: both; position: relative; width: 100%; padding: 120px 0 0 0; background:var(--violet); margin: 0 0 37px 0;}
+.hero-banner-section{z-index: 1; clear: both; position: relative; width: 100%; padding: 144px 0 0 0; background-image: linear-gradient(to top, #fff, #f5f5f5); margin: 0 0 37px 0;}
 .hero-banner-section .hero-banner-main {justify-content:space-between; position: relative; min-height: 578px; align-items: center; padding: 40px 0; max-width: 1150px; margin: 0 auto;}
-.hero-banner-section .hero-banner-main .hero-banner-txt {width:42%; margin:0 3% 3px 0; color: var(--white);}
-.hero-banner-section .hero-banner-main .hero-banner-txt .optional-text {color:var(--white-50);}
-.hero-banner-section .hero-banner-main .hero-banner-txt h1 {color: var(--white); margin-bottom: 18px;}
-.hero-banner-section .hero-banner-main .hero-banner-txt h1 span {font-size: 7.25rem; line-height: 6rem; color: var(--pink); font-family: CCSignLanguage; letter-spacing: normal; font-weight: normal; display: block; transform: rotate(-1.25deg); margin: -4px 0 0 -3px;}
+.hero-banner-section .hero-banner-main .hero-banner-txt {width:42%; margin:0 3% 3px 0; }
 .hero-banner-section .hero-banner-main .hero-banner-txt p {font-size: 1.125rem; line-height: 1.39; font-weight: 600;}
 .hero-banner-section .hero-banner-main .hero-banner-image {width:53%;}
 .hero-banner-section .hero-banner-main .hero-banner-image .banner-img {position:absolute; display:flex; align-items:stretch; height:606px; width:606px; right: 0; bottom: -37px;}
-.hero-banner-section .hero-banner-main .hero-banner-image .banner-img img {border-radius: 50%;}
 .hero-banner-wrap {max-width: 1700px; margin: 0 auto;}
-
-
-/* Reverse */
-.hero-banner-section.reverse .hero-banner-main {flex-direction: row-reverse; max-width: 1270px;}
-.hero-banner-section.reverse .hero-banner-main .hero-banner-image .banner-img {left: 0; right: inherit;}
-.hero-banner-section.reverse .hero-banner-main .hero-banner-txt {width: 38.8%; margin: 0 0 3px 3%;}
-
-/* Color Specific */
-.hero-banner-section.blue-bg {background: var(--text-violetblue);}
 
 
 

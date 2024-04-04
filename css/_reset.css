@@ -96,10 +96,10 @@ button:focus, .button:focus {background-color: var(--yellow); color: var(--headi
 
 
 /* Default Outline Button*/
-.outline-btn {background: transparent; border: 2px solid var(--outline-btn); color: var(--heading); padding: 15px 24px 15px 22px;}
+.outline-btn {background: transparent; border: 2px solid var(--outline-btn); color: var(--heading); padding: 13px 24px 13px 22px;}
 .outline-btn:hover {background: transparent; border-color: var(--yellow); color: var(--heading);}
 
-.outline-btn-white {background: transparent; border: 2px solid var(--text-color); color: var(--white); padding: 15px 24px 15px 22px}
+.outline-btn-white {background: transparent; border: 2px solid var(--text-color); color: var(--white); padding:13px 24px 13px 22px;}
 .outline-btn-white:hover {background: transparent; border: 2px solid var(--yellow); color: var(--white);}
 
 .outline-btn-white:focus, .outline-btn:focus {background-color:transparent;}
