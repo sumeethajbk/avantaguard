@@ -1,0 +1,4 @@
+.confirmation-banner{position: relative; clear: both; width: 100%; overflow: hidden; background-color: var(--yellow);}
+.confirmation-main{position: relative;}
+.confirmation-vector{position: absolute; top: 0; left: 0;}
+.confirmation-text{margin: auto; max-width: 573px; text-align: center;}
