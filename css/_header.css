@@ -1,12 +1,12 @@
 .main_header {width: 100%; top: 0; left: 0; right: 0; position: fixed; z-index: 850; transition: .3s ease-in-out;}
 .main_header .header {padding: 20px 80px; border-radius: 70px; border-bottom: 2px solid rgba(0, 0, 0, 0.05);  background: var(--white); margin: 54px 0 0 0; justify-content: space-between;}
-.main_header .logo {width: 196px; position: relative;}
+.main_header .logo {width: 196px; position: relative; top: -2px;}
 .main_header .logo a {width: 100%; display: block; position: relative;}
 
 /* Header Right */
 .main_header .header .toggle_button, .main_header ul li:before {display: none;}
 .main_header .header-btm {display: flex; flex-wrap: wrap; justify-content: flex-end;  width: 100%; align-items: center;}
-.main_header .header_right {width: calc(100% - 243px); margin: 4px 0 0 0;}
+.main_header .header_right {width: calc(100% - 196px);}
 
 .main_header .nav-btn {margin: 0 0 0 40px; font-size: 0;}
 .main_header .nav-btn a {margin-left: 11px;}
@@ -15,27 +15,25 @@
 
 /*** Responsive ***/
 @media only screen and (min-width:1024px) {
-  ul.main_menu {  margin: 0; font-size: 0;}
-  ul.main_menu li.flex-menu > ul > li:first-child:before, ul.main_menu li::before {display: none;}
-  ul.main_menu > li {margin-left: 47px; display: inline-block; margin-bottom: 0;}
-  ul.main_menu > li:first-child {margin-left: 0;}
-  ul.main_menu > li > a {padding:20px 0; font-size: 1rem; font-weight: 600; line-height: normal; display: inline-block; position: relative;
-  color: var(--heading);}
-	
+    ul.main_menu {  margin: 0; font-size: 0;}
+    ul.main_menu li.flex-menu > ul > li:first-child:before, ul.main_menu li::before {display: none;}
+    ul.main_menu > li {margin-left: 15px; display: inline-block; margin-bottom: 0;}
+    ul.main_menu > li:first-child {margin-left: 0;}
+    ul.main_menu > li > a {padding:5px 17px 5px 17px; font-size: 1rem; font-weight: 600; line-height: normal; display: inline-block; position: relative;
+    color: var(--heading);}
 
-	ul.main_menu > li.current-menu-item > a, 
-	ul.main_menu > li.current-menu-parent > a, 
-	ul.main_menu > li.current-page-ancestor > a, 
-	ul.main_menu > li.menu-item-has-children > a:hover, 
-	ul.main_menu .current_page_item > a, 
-	ul.main_menu > li > a:hover {color: var(--yellow)!important;}
-  
+    ul.main_menu > li.current-menu-item > a, 
+    ul.main_menu > li.current-menu-parent > a, 
+    ul.main_menu > li.current-page-ancestor > a, 
+    ul.main_menu > li.menu-item-has-children > a:hover, 
+    ul.main_menu .current_page_item > a, 
+    ul.main_menu > li > a:hover {border-radius: 8px; background-image: linear-gradient(to bottom, #f0f0f0 0%, #fff 84%);}
 
-	
-	
-  ul.main_menu > li > ul {margin: 0; padding:23px 36px 18px 32px; min-width: 267px; width: 100%; top: calc(100% + 5px); left: 50%; transform: translate(-50%,0); position: absolute; background-color: var(--white); border-radius: 15px; box-shadow: 0 4px 44px 0 rgba(1,32,237,.15);
-opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.175,.885,.32,1.275); z-index: 851;}
-  ul.main_menu > li > ul:before {content: ""; width: 0; height: 0; bottom: 100%; left: 50%; transform: translateX(-50%); border-color: transparent transparent #fff; border-style: solid; border-width: 0 6px 8px; position: absolute;}
+
+    ul.main_menu > li.menu-item-has-children > a {padding-right: 41px;}
+    ul.main_menu > li.menu-item-has-children > a:after {content: "\f078"; display: block; position: absolute; right:18px; font-family: "Font Awesome 6 Pro"; top: 9px; font-size: 12px; color: var(--yellow); line-height: 12px; font-weight: 900;}
+
+     ul.main_menu > li > ul {margin: 0; padding:23px 36px 18px 32px; min-width: 267px; width: 100%; top: calc(100% + 5px); left: 50%; transform: translate(-50%,0); position: absolute; background-color: var(--white); border-radius: 15px; box-shadow: 0 4px 44px 0 rgba(1,32,237,.15); opacity: 0; visibility: hidden; transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.175,.885,.32,1.275); z-index: 851;}
   ul.main_menu > li > ul > li {margin: 0 0 12px;}
   ul.main_menu > li > ul > li > a {font-size: 1rem; font-weight: 500; line-height: 1.3; color: var(--violet);}
   ul.main_menu > li > ul > li > a:hover {color: var(--orange);}
