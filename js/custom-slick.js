@@ -349,80 +349,80 @@ jQuery(document).ready(function () {
 
   }
 
+/* short intro slider */
 
-  jQuery('.comm-slider').slick({
+  // jQuery('.short-intro-list').slick({
 
-    slidesToShow: 1,
+  //   slidesToShow: 1,
 
-    slidesToScroll: 1,
+  //   slidesToScroll: 1,
 
-    infinite: false,
+  //   infinite: false,
 
-    speed: 1000,
+  //   speed: 1000,
 
-    dots: false,
+  //   dots: false,
 
-    arrows: true,
+  //   arrows: true,
 
-    variableWidth: true,
+  //   variableWidth: true,
 
-    prevArrow: '<span class="slick-arrow prev-arrow flex flex-center"></span>',
+  //   responsive: [{
 
-    nextArrow: '<span class="slick-arrow next-arrow flex flex-center"></span>',
+  //       breakpoint: 1024,
 
-    responsive: [{
+  //       settings: {
 
-        breakpoint: 1024,
+  //         slidesToShow: 1,
 
-        settings: {
+  //         slidesToScroll: 1,
 
-          slidesToShow: 1,
+  //       }
 
-          slidesToScroll: 1,
+  //     },
 
-        }
+  //     {
 
-      },
+  //       breakpoint: 768,
 
-      {
+  //       settings: {
 
-        breakpoint: 768,
+  //         slidesToShow: 1,
 
-        settings: {
+  //         slidesToScroll: 1,
 
-          slidesToShow: 1,
+  //         arrows: false,
 
-          slidesToScroll: 1,
+  //         dots: true,
 
-          arrows: false,
+  //       }
 
-          dots: true,
+  //     },
 
-        }
+  //   ]
 
-      },
-
-    ]
-
-  });
+  // });
 
   if (jQuery(window).width() <= 767) {
 
-    jQuery(".community-row").slick({
+    jQuery(".short-intro-row").slick({
 
-      slidesToShow: 1,
+    
 
+     draggable: true,
+
+     touchThreshold: 200,
+
+     swipeToSlide: true,
+     slidesToShow: 1,
       slidesToScroll: 1,
-
-      arrows: false,
-
-      dots: true,
-
       variableWidth: true,
-
+      arrows: false,
+      dots: true,
+      speed: 1500,
       infinite: false,
-
-    })
+      autoplay: false,
+    });
 
 
   }
