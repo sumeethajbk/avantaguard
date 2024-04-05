@@ -1,4 +1,4 @@
-.short-intro-section{ clear: both; width: 100%; overflow: hidden; background-color: #f5f5f5; z-index: -1;}
+.short-intro-section{ clear: both; width: 100%; overflow: hidden; background-color: #f5f5f5; }
 .short-intro-bg{ z-index: -1;}
 .short-intro-bg img{ margin: 0 auto;}
 .short-intro-wrap{padding: 80px 0;}
