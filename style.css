@@ -281,8 +281,10 @@ body .frm_forms .frm_submit .button:hover:after, body .frm_forms .frm_submit but
 
 
 
-.optional-text {font-size:1rem; color:var(--heading); font-weight:400; margin:0 0 25px 0; display:block;}
-.btn-wrap {width:100%; clear:both;}
+.optional-text {font-size:1rem; color:var(--heading); font-weight:400; margin:0 0 22px 0; display:block;}
+.btn-wrap {width:100%; clear:both; font-size: 0;}
+.btn-wrap .button {margin-right:24px;}
+.btn-wrap .button:last-child {margin-right: 0;}
 
 /* Heading */
 .heading {clear: both; padding: 0 0 41px; width: 100%; justify-content: space-between; align-items: center;}
