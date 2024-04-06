@@ -1,8 +1,8 @@
 .repeater-section{clear: both; width: 100%; overflow: hidden;}
-.repeater-main{padding: 80px;}
+.repeater-main{padding: 80px 0;}
 .repeater-text h3{font-size: 1.875rem;}
 .repeater-text span{margin: 0 0 16px 0;}
-.repeater-img img{width: 505px;}
+.repeater-img img{ border-radius: 8px;}
 
 @media only screen and (min-width: 1024px) {
     .repeater-list{gap: 80px; margin-bottom: 80px;}
