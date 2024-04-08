@@ -1,8 +1,8 @@
-.short-intro-section{ clear: both; width: 100%; overflow: hidden; background-color: #f5f5f5; }
+.short-intro-section{ clear: both; width: 100%; overflow: hidden; background-color: #f5f5f5; z-index: 1;}
 .short-intro-bg{ z-index: -1;}
 .short-intro-bg img{ margin: 0 auto;}
 .short-intro-wrap{padding: 80px 0;}
-.short-intro-main{position: relative;}
+.short-intro-main{position: relative; max-width: 1090px;}
 .short-intro-lt h2{font-size: 2.5rem; margin-bottom: 23px;}
 .short-intro-lt h2 span{position: relative;}
 .short-intro-lt h2 span svg{position: absolute; bottom: 0; left: 0; content: ""; display: block;}
@@ -16,15 +16,12 @@
 
 /* media starts here */
 @media only screen and (min-width: 1200px) {
-    .short-intro-main{max-width: 1090px;}
-    .short-intro-bg{top: -15px; left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
-    .short-intro-row{gap: 50px};
-    .short-intro-list{flex: 0 0 292px;}
+   .short-intro-bg{top: -15px; left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
+    .short-intro-list{width: 22%;; margin-left: 50px;}
+    .short-intro-list:nth-child(4n+1){margin-left: 0;}
 }
 @media only screen and (min-width: 1024px) {
-    .short-intro-main{display: flex; flex-wrap: wrap; width: 100%; }
     .short-intro-bg{ left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
-
     .short-intro-lt{flex-grow: 1; width: 33%; margin-right: 60px;}
     .short-intro-rt{flex-grow: 1; margin-top: 46px; width: calc(100% - 44%);}
     .short-intro-lt > span{margin-bottom: 22px;}
@@ -33,16 +30,19 @@
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
     .short-intro-main{max-width: 835px;}
     .short-intro-bg{top: 50px;}
-    .short-intro-row{gap: 20px};    
-    .short-intro-list{flex: 0 0 231px;}
+    .short-intro-list{width: 23.4%; margin-left: 20px;}
+    .short-intro-list:nth-child(4n+1){margin-left: 0;}
+
     
 }
 @media only screen and (max-width: 1023px) and (min-width: 768px){
     .short-intro-bg{width: 671px;}
-    .short-intro-lt{flex: 0 0 394px;}
-    .short-intro-rt{flex: 0 0 calc(100% - 454px); max-width: 636px; flex-grow: 1; margin-top: 46px;}
-    .short-intro-row{gap: 40px;}
-    .short-intro-list{flex: 0 0 344px;}
+    .short-intro-lt{margin-bottom: 40px;}
+    .short-intro-row{padding: 40px 0 0;}
+    .short-intro-list{width: 47%; margin-left: 40px; margin-top: 40px;}
+    .short-intro-list:nth-child(2n+1){margin-left: 0;}
+
+
 
 
 }
