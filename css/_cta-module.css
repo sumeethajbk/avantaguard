@@ -1,0 +1,13 @@
+.cta-module {clear: both; position: relative; width: 100%;}
+.cta-wrap {justify-content: space-between; background: var(--yellow);}
+.cta-lt {width: 56.666666666666664%; padding: 80px; background: var( --heading); color: var(--light-txt); position: relative;}
+.cta-lt .h2 { color: var(--light-txt); font-size: 2.5rem; font-weight: 600; line-height: 1.2; margin-bottom: 24px;}
+.cta-lt .h2 span svg {right: 19px; bottom: -22px; width: 209.7px; height: 18.3px;}
+.cta-lt .optional-text {color: var(--light-txt);}
+.cta-lt p {margin-bottom: 24px;}
+.cta-lt .avanta-icon {opacity: 0.1; bottom: 0; right: -106px; width: 509px; height:428px;}
+
+.cta-rt {width: 43.18181818181818%; position: relative;}
+.cta-rt .cta-thumb {display: flex; flex-wrap: wrap; height: 100%; align-items: center; width: 100%;}
+.cta-rt .cta-thumb .car-bg {top: 43px;}
+.cta-rt .cta-thumb .car-img {width: 377px; position: relative; z-index: 1; margin: 0 auto; top: 13px; right: -9px;}

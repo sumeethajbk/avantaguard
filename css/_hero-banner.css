@@ -1,6 +1,6 @@
-.hero-banner-section{z-index: 1; clear: both; position: relative; width: 100%; padding: 144px 0 0 0; background-image: linear-gradient(to top, #fff, #f5f5f5); margin: 0 0 37px 0;}
-.hero-banner-section .hero-banner-main {justify-content:space-between; align-items: center; padding:29px 0 80px;}
-.hero-banner-section .hero-banner-main .hero-banner-txt {width:40%; margin:0 3% 0 0; }
+.hero-banner-section{z-index: 1; clear: both; position: relative; width: 100%; padding: 144px 0 0 0; background-image: linear-gradient(to top, #fff, #f5f5f5); margin: 0 0 37px 0; min-height: 546px;}
+.hero-banner-section .hero-banner-main {justify-content:space-between; align-items: center; padding:29px 0 80px; min-height: 402px;}
+.hero-banner-section .hero-banner-main .hero-banner-txt {width:40%; margin:auto 3% 0 0; }
 .hero-banner-section .hero-banner-main .hero-banner-txt p {font-size: 1.125rem; line-height: 1.7; margin-bottom: 24px;}
 .hero-banner-section .hero-banner-main .hero-banner-image {width:53%;}
 .hero-banner-section .hero-banner-main .hero-banner-image .banner-img {position:absolute; display:flex; align-items:stretch; height:100%; width:51.94117647058823%; right: 0; bottom:0;}
@@ -14,8 +14,7 @@
 
 
 /*-- media starts here --*/
-@media screen and (max-width: 1399px) and (min-width: 768px) {
-}
+
 
 
 @media only screen and (max-width: 1199px) and (min-width:1024px){
@@ -26,11 +25,29 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 200px){
-	
+    .hero-banner-section {min-height: inherit; padding: 90px 0 40px 0; margin: 0;}
+    .hero-banner-section .container {padding: 0;}
+    .hero-banner-section .hero-banner-main {min-height: inherit; padding: 0; flex-direction: column-reverse; margin-top: -90px;}
+    .hero-banner-section .hero-banner-main.no-banner-img {margin-top: 0;}
+    .hero-banner-section .hero-banner-main .hero-banner-txt {width: 100%; margin: 0;}
+    .hero-banner-section .hero-banner-main .hero-banner-image {width: 100%; overflow: hidden;}
+    .hero-banner-section .hero-banner-main .hero-banner-image .banner-img {width:100%; position: relative;}
 	
 }
 
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .hero-banner-section .hero-banner-main .hero-banner-txt {padding:40px 20px 0 20px;}
+    .hero-banner-section .hero-banner-main .hero-banner-image {height: 490px;}
+
+
+}
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
+    .hero-banner-section .hero-banner-main .hero-banner-txt {padding:40px 16px 0 16px;}
+    .hero-banner-section .hero-banner-main .hero-banner-txt .optional-text {margin: 0 0 21px 0;}
+    .hero-banner-section .hero-banner-main .hero-banner-txt p {line-height: 1.5;}
+    .hero-banner-section .hero-banner-main .hero-banner-image {min-height: 250px; height: inherit;}
+    
+
 
 }
