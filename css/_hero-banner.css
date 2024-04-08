@@ -46,7 +46,7 @@
     .hero-banner-section .hero-banner-main .hero-banner-txt {padding:40px 16px 0 16px;}
     .hero-banner-section .hero-banner-main .hero-banner-txt .optional-text {margin: 0 0 21px 0;}
     .hero-banner-section .hero-banner-main .hero-banner-txt p {line-height: 1.5;}
-        .hero-banner-section .hero-banner-main .hero-banner-image {height: 250px;}
+    .hero-banner-section .hero-banner-main .hero-banner-image {min-height: 250px; height: inherit;}
     
 
 

@@ -24,8 +24,14 @@
 	.accordion-module-wrap {padding: 69px 0 70px; flex-direction: column-reverse;}
 	
 }
+
+@media only screen and (max-width: 1023px) and (min-width:768px){
+    .faq-block:before {width: calc(100% - 40px);}
+}
+
 @media only screen and (max-width: 767px) and (min-width: 200px){
     .faq-block{padding: 0 0 30px;}
+    .faq-block:before {width: calc(100% - 32px);}
     .accordion-item .heading {padding: 21px 32px 24px 70px;}
     .content { padding: 1px 37px 32px 70px; }
 }
