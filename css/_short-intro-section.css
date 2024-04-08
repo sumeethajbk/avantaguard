@@ -17,7 +17,7 @@
 /* media starts here */
 @media only screen and (min-width: 1200px) {
    .short-intro-bg{top: -15px; left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
-    .short-intro-list{width: 22%;; margin-left: 50px;}
+    .short-intro-list{width: 22%;; margin-left: 4%;}
     .short-intro-list:nth-child(4n+1){margin-left: 0;}
 }
 @media only screen and (min-width: 1024px) {
@@ -30,7 +30,7 @@
 @media only screen and (max-width: 1199px) and (min-width: 1024px){
     .short-intro-main{max-width: 835px;}
     .short-intro-bg{top: 50px;}
-    .short-intro-list{width: 23.4%; margin-left: 20px;}
+    .short-intro-list{width: 23.4%; margin-left: 2%;}
     .short-intro-list:nth-child(4n+1){margin-left: 0;}
 
     
@@ -39,11 +39,8 @@
     .short-intro-bg{width: 671px;}
     .short-intro-lt{margin-bottom: 40px;}
     .short-intro-row{padding: 40px 0 0;}
-    .short-intro-list{width: 47%; margin-left: 40px; margin-top: 40px;}
+    .short-intro-list{width: 47%; margin-left: 4%; margin-top: 40px;}
     .short-intro-list:nth-child(2n+1){margin-left: 0;}
-
-
-
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){

@@ -3,11 +3,31 @@
 .repeater-text h3{font-size: 1.875rem;}
 .repeater-text span{margin: 0 0 16px 0;}
 .repeater-img img{ border-radius: 8px;}
+.repeater-list.row-reverse{flex-direction: row-reverse;}
 
 @media only screen and (min-width: 1024px) {
-    .repeater-list{gap: 80px; margin-bottom: 80px;}
+    .repeater-list{ margin-bottom: 80px;}
     .repeater-list:last-child{margin-bottom: 0;}
-    .repeater-text{flex: 0 0 505px;}
-    .repeater-img{flex: 0 0 calc(100% - 585px);}
+    .repeater-text{width: 46.3%}
+    .repeater-img{width: 46.3%; margin-left: 7%;}
+    .repeater-list.row-reverse .repeater-img{margin-left: 0;}
+    .repeater-list.row-reverse .repeater-text{margin-left: 7%;}
+
     
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+    .repeater-list{margin-bottom: 44px; flex-direction: column-reverse;}
+    .repeater-list.row-reverse{flex-direction: column-reverse;}
+    .repeater-list:last-child{margin-bottom: 0;}
+    .repeater-img{margin-bottom: 20px;}
+
+
+}
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .repeater-main{padding: 40px 0;}
+    .repeater-img { margin-bottom: 15px; }
+    .repeater-img img{max-height: 160px;}
+    .repeater-text span { margin: 0 0 9px 0; }
+    .repeater-text h3{margin-bottom: 17px;}
+
 }
