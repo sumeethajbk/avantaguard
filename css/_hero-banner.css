@@ -1,4 +1,4 @@
-.hero-banner-section{z-index: 1; clear: both; position: relative; width: 100%; padding: 144px 0 0 0; background-image: linear-gradient(to top, #fff, #f5f5f5); margin: 0 0 37px 0; min-height: 546px;}
+.hero-banner-section{z-index: 1; clear: both; position: relative; width: 100%; padding: 144px 0 0 0; background-image: linear-gradient(to top, #fff, #f5f5f5); min-height: 546px;}
 .hero-banner-section .hero-banner-main {justify-content:space-between; align-items: center; padding:29px 0 80px; min-height: 402px;}
 .hero-banner-section .hero-banner-main .hero-banner-txt {width:40%; margin:auto 3% 0 0; }
 .hero-banner-section .hero-banner-main .hero-banner-txt p {font-size: 1.125rem; line-height: 1.7; margin-bottom: 24px;}
