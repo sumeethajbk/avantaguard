@@ -161,7 +161,9 @@ img.alignnone {margin:50px 0 44px; display: block; clear: both;}
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px) {
-	
+    .outline-btn {padding: 13px 22px 13px 22px;}
+    h1, .h1 {font-size: 2.25rem; line-height: 1.2;}
+    
 
 	
 }
