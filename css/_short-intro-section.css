@@ -13,7 +13,6 @@
 .short-intro-icon{background-image: url("../images/tick-yellow.svg"); display: block; width: 24px; height: 24px; background-size: cover; background-position: center; margin-bottom: 15px;}
 .short-intro-list:nth-child(even) .short-intro-icon{background-image: url("../images/tick-icon.svg");}
 
-
 /* media starts here */
 @media only screen and (min-width: 1200px) {
    .short-intro-bg{top: -15px; left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
