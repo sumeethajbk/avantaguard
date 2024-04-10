@@ -12,7 +12,7 @@
 .short-intro-list h3{margin-bottom: 17px;}
 .short-intro-icon{background-image: url("../images/tick-yellow.svg"); display: block; width: 24px; height: 24px; background-size: cover; background-position: center; margin-bottom: 15px;}
 .short-intro-list:nth-child(even) .short-intro-icon{background-image: url("../images/tick-icon.svg");}
-
+.short-intro-section::before { background: var(--outline-btn); content: ""; display: block; width: 100%; height: 6px; max-width: 1090px; margin: 0 auto; position: absolute; bottom: 0; left: 0; right: 0; }
 /* media starts here */
 @media only screen and (min-width: 1200px) {
    .short-intro-bg{top: -15px; left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
@@ -43,7 +43,7 @@
 
 }
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .short-intro-wrap{padding: 40px 0;}
+    .short-intro-wrap{padding: 40px 0 0;}
     .short-intro-bg{top: 0; left: -70px; width: 671px; height: 565px;}
     .short-intro-lt h2{font-size: 2rem;}
     .short-intro-lt h2 span svg{left: 11px; bottom: -4px;}
