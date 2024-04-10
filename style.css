@@ -94,7 +94,7 @@ body {font-family: 'Outfit', sans-serif; color: var(--text-color); font-size: 1r
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {color:var(--heading); text-decoration: none;}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .h1 a:hover, .h2 a:hover, .h3 a:hover, .h4 a:hover, .h5 a:hover, .h6 a:hover {color:var(--yellow);}
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .h1 span, .h2 span, .h3 span, .h4 span, .h5 span, .h6 span {position: relative;}
-h1 span svg, h2 span svg, h3 span svg, h4 span svg, h5 span svg, h6 span svg, .h1 span svg, .h2 span svg, .h3 span svg, .h4 span svg, .h5 span svg, .h6 span svg {position: absolute;}
+h1 span svg, h2 span svg, h3 span svg, h4 span svg, h5 span svg, h6 span svg, .h1 span svg, .h2 span svg, .h3 span svg, .h4 span svg, .h5 span svg, .h6 span svg {position: absolute; display: block;}
 
 .h1, .h2, .h3, .h4, .h5, .h6 {display: block; font-family:"Outfit", sans-serif; color: var(--heading);}
 .h1 {font-size: 3rem; line-height: 1.2; margin-bottom: 24px;}

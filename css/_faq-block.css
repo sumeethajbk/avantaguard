@@ -1,8 +1,20 @@
-.faq-block {clear: both; width: 100%; padding: 49px 0; background: var(--light-txt); position: relative;}
+.faq-block {clear: both; width: 100%; padding:85px 0 80px 0; background: var(--light-txt); position: relative;}
 .faq-block:before {background: var(--outline-btn); content: ""; display: block; width: 100%; height: 6px; max-width: 1090px; margin: 0 auto; position: absolute;
   top: 0; left: 0; right: 0;}
 .faq-main {max-width: 1090px; margin: 0 auto;}
-.faq-lt {width: 343px;}
+
+.faq-lt {width: 343px; color: var(--heading);}
+.faq-lt .have-questions {margin:0 0 64px 0;}
+.faq-lt .have-questions h2 svg {width: 107px; height:7px; right: 3px; bottom: -6px;}
+
+.faq-lt h3 {margin-bottom: 24px;}
+.faq-lt .optional-text {margin: 0 0 8px 0;}
+.faq-lt p {margin-bottom: 24px;}
+.faq-cta {background: var(--yellow); padding: 24px; position:relative; color: var(--heading);}
+.faq-cta .button {width: 100%;}
+.faq-cta .avanta-icon {width: 24px; height: 20.2px; display: block; margin: 0 0 24px 0; line-height: 0;}
+.faq-cta .faq-cta-img {width: 244px; height: 117px; position: absolute; right: 14px; top: -39px;}
+
 .faq-rt {width:62.66055045871559%; margin-left: auto;}
 .accordion-main {background: var(--white); border-radius: 16px; border: 1px solid var(--outline-btn)}
 .accordion-main .accordion:first-child .accordion-item {border-top-left-radius: 16px; border-top-right-radius: 16px; border: 0 none;}
@@ -20,18 +32,25 @@
 
 
 /*-- media starts here --*/
-@media only screen and (max-width: 1299px) and (min-width:1024px){
-	
-}
+
 @media only screen and (max-width: 1023px) and (min-width: 200px){
-	.accordion-module-wrap {padding: 69px 0 70px; flex-direction: column-reverse;}
+    .faq-lt {width: 100%;}
+    .faq-rt {width: 100%;}
 	
 }
 
 @media only screen and (max-width: 1023px) and (min-width:768px){
+    .faq-block {padding: 65px 0 75px 0;}
     .faq-block:before {width: calc(100% - 40px);}
+    .faq-cta .button {width: auto;}
+    .faq-rt {margin: 40px 0 0 0;}
+    
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .faq-rt {width: 100%;}
+    .faq-block {padding: 48px 0 80px 0;}
+    .faq-block:before {width: calc(100% - 32px);}
+    .faq-lt {color: var(--text-color);}
+    .faq-lt .have-questions {margin: 0 0 47px 0;}
+    .faq-lt .have-questions h2 {font-size: 1.75rem; margin-bottom: 23px;}
 }
