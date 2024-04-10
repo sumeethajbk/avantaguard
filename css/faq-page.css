@@ -4,3 +4,4 @@
 @import url("../css/_cta-module.css");
 
 .hero-banner-section .hero-banner-main .hero-banner-txt h1 span svg { position: absolute; left: 27px; bottom: -15px; width: 209.7px; height: 18.3px; z-index: -1;}
+.cta-module{padding: 0 0 80px;}
