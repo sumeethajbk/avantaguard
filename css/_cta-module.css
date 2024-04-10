@@ -11,3 +11,19 @@
 .cta-rt .cta-thumb {display: flex; flex-wrap: wrap; height: 100%; align-items: center; width: 100%;}
 .cta-rt .cta-thumb .car-bg {top: 43px;}
 .cta-rt .cta-thumb .car-img {width: 377px; position: relative; z-index: 1; margin: 0 auto; top: 13px; right: -9px;}
+
+
+@media only screen and (max-width:1023px) and (min-width:200px) {
+.cta-lt {padding: 40px;}
+.cta-lt .h2 {font-size: 2rem; line-height: 1.25; margin-bottom: 27px;}
+}
+
+@media only screen and (max-width:767px) and (min-width:200px) {
+    .cta-module .container {padding: 0;}
+    .cta-lt {width: 100%; padding:37px 16px 40px;}
+    .cta-lt .optional-text {margin: 0 0 26px 0;}
+    .cta-lt .avanta-icon {display: none;}
+    .cta-lt .h2 span svg {right:27px; bottom: -10px; width:128px; height: 12px;}
+    .cta-lt p {margin-bottom: 23px;}
+    .cta-rt {display: none;}
+}
