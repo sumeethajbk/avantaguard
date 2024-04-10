@@ -48,8 +48,9 @@
     .short-intro-lt h2{font-size: 2rem;}
     .short-intro-lt h2 span svg{left: 11px; bottom: -4px;}
     .short-intro-rt{margin-top: 24px;}
-    .short-intro-row{padding: 40px 0 0;}
-    .short-intro-list{width: 300px;}
+    .short-intro-row{padding: 58px 0 0;}
+    .short-intro-list{width: 295px; margin-right: 20px;}
 
+    .short-intro-row .slick-list {overflow: inherit;}
 
 }
