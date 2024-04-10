@@ -19,7 +19,7 @@ abbr[title] {border-bottom: 1px dotted #2b2b2b; cursor: help;}
 b, strong {font-weight: 700;}
 cite, dfn, em, i {font-style: italic;}
 mark, ins {background: #fff9c0; text-decoration: none;}
-p {margin-bottom: 22px;}
+p {margin-bottom: 23px;}
 p:last-child {margin-bottom: 0;}
 code, kbd, tt, var, samp, pre {font-size: 15px; -webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none; line-height: 1.6;}
 pre {border: 1px solid rgba(0, 0, 0, 0.1); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 24px; max-width: 100%; overflow: auto; padding: 12px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
@@ -101,11 +101,17 @@ button:focus, .button:focus {background-color: var(--yellow); color: var(--headi
 
 .outline-btn-white {background: transparent; border: 2px solid var(--text-color); color: var(--white); padding:13px 24px 13px 22px;}
 .outline-btn-white:hover {background: transparent; border: 2px solid var(--yellow); color: var(--white);}
-
 .outline-btn-white:focus, .outline-btn:focus {background-color:transparent;}
 
 .outline-btn::after, .outline-btn-white::after {content:"\f061"; font-size:0.875rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: static; display: inline-block; margin:-3px 0 0 13px;  vertical-align: middle; line-height: 12px; color: var(--yellow);}
 .outline-btn:hover:after, .outline-btn-white:hover:after {animation-name: bounceAlpha; animation-duration:1.4s; animation-iteration-count:infinite; animation-timing-function:linear;}
+
+/* Black Outline Button */
+.black-arrow-btn {background-color: var(--heading); color:var(--white);}
+.black-arrow-btn:hover {background-color: var(--white); color: var(--yellow);}
+.black-arrow-btn:focus, .outline-btn:focus {background-color:var(--heading); color: var(--white);}
+.black-arrow-btn:after {content:"\f061"; font-size:0.875rem; font-family: "Font Awesome 6 Sharp"; font-weight: 400; transition: all .3s ease-in-out; position: static; display: inline-block; margin:-3px 0 0 14px;  vertical-align: middle; line-height: 12px; color: var(--yellow);}
+.black-arrow-btn:hover:after {animation-name: bounceAlpha; animation-duration:1.4s; animation-iteration-count:infinite; animation-timing-function:linear;}
 
 
 /* Black Button */
