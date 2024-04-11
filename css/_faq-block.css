@@ -21,12 +21,12 @@
 .accordion-main .accordion:last-child .accordion-item {border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;}
 .accordion-item{position: relative; background: var(--white); border-top: 1px solid var(--outline-btn);}
 
-.accordion-item .heading{font-size:1.063rem; font-weight: 500; padding:16px 70px 17px 77px; display: block; color:var(--text-color); text-decoration: none;}
+.accordion-item .heading{font-size:1.063rem; font-weight: 500; padding:18px 70px 20px 77px; display: block; color:var(--text-color); text-decoration: none; line-height: 1.29; position: relative;}
 .accordion-item .heading:after{content: ""; display:inline-block; width:28px; height:28px; background:linear-gradient(#fdb515 0 0),
     linear-gradient(#fdb515 0 0), var(--white); background-position:center; background-size: 12px 2px,2px 12px; background-repeat:no-repeat; border-radius:50%; position: absolute; left:23px; top: 15px; border: solid 1.5px var(--outline-btn); transition-duration: .75s; transition-property: all; transition-timing-function: cubic-bezier(.075,.82,.165,1);}
 .accordion-item.active .heading:after {transform: rotate(45deg); background: linear-gradient(#1A1E1F 0 0), linear-gradient(#1A1E1F 0 0), var(--white);
   background-position: center; background-size: 12px 1.5px,1.5px 12px; background-repeat: no-repeat; top: 31px;}
-.accordion-item.active .heading {padding: 32px 70px 17px 77px;}
+.accordion-item.active .heading {padding:35px 70px 20px 77px; color: var(--heading);}
 
 .content{display: none; padding:1px 32px 31px 77px; opacity: 0.75;}
 
@@ -48,9 +48,16 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 200px){
-    .faq-block {padding: 48px 0 80px 0;}
+    .faq-block {padding: 48px 0 39px 0;}
     .faq-block:before {width: calc(100% - 32px);}
     .faq-lt .have-questions {margin: 0 0 47px 0;}
     .faq-lt .have-questions h2 {font-size: 1.75rem; margin-bottom: 23px;}
     .faq-lt .faq-cta p {margin-bottom: 23px;}
+    
+    .faq-rt {margin: 31px 0 0 0;}
+    .accordion-item .heading {padding: 14px 20px 16px 69px;}
+    .accordion-item .heading::after, .accordion-item.active .heading::after {top: 50%; transform: translateY(-50%);}
+    .accordion-item.active .heading {padding: 35px 20px 16px 69px;}
+    .content {padding: 1px 20px 31px 69px;}
+
 }
