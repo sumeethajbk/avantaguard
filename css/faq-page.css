@@ -3,5 +3,10 @@
 
 @import url("../css/_cta-module.css");
 
-.hero-banner-section .hero-banner-main .hero-banner-txt h1 span svg { position: absolute; left: 27px; bottom: -15px; width: 209.7px; height: 18.3px; z-index: -1;}
+.hero-banner-section .hero-banner-main .hero-banner-txt h1 span svg {  left: 27px; bottom: -15px;}
 .cta-module{padding: 0 0 80px;}
+
+@media only screen and (max-width: 767px) and (min-width: 200px){
+    .hero-banner-section .hero-banner-main .hero-banner-txt h1 span svg { right: 19px; bottom: -9px; width: 128px; height: 12px; left: inherit;}
+    .cta-module{padding: 0;}
+}
