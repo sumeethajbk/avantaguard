@@ -49,7 +49,6 @@ jQuery(document).ready(function () {
   }
 
 
-
   // New edit
   jQuery(".accordion-item .heading").on("click", function (e) {
     e.preventDefault();
@@ -65,9 +64,6 @@ jQuery(document).ready(function () {
   });
 
 
-
-
-
   /* Bottom Video Slide*/
   jQuery('.video-thumbnail .play-btn').on('click', function (e) {
     e.preventDefault();
@@ -79,6 +75,11 @@ jQuery(document).ready(function () {
     jQuery('.overlay_main_sec').removeClass('active');
   });
 
-
+  jQuery('.top_arrow').on('click', function () {
+    jQuery("html, body").animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
 
 });
