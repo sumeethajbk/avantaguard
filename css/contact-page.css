@@ -1,0 +1,20 @@
+.contact-section{ position: relative; clear: both; width: 100%; z-index: 1; background-color: var(--light-txt); min-height: 741px;}
+.contact-main { padding: 212px 0 0; height: 100%; align-items: stretch; min-height: 741px; }
+.contact-left{width: 50%;}
+.contact-right{width: 50%; padding-left: 58px;}
+.contact-left h1{font-size: 2rem; line-height: 1.2; max-width: 392px; margin-bottom: 16px;}
+.contact-left h1 span{position: relative; display: inline-block;}
+.contact-left h1 span::before{position: absolute; display: block; width: 145px; height: 9px; right: 17px; bottom: -5px; background-image: url("../images/heading-line.svg"); content: "";}
+.contact-left p{font-size: 1rem; line-height: 1.38; color: var(--text-color); font-weight: 600; font-family: 'Outfit';}
+.contact-text span.optional-text{margin: 0 0 14px 0;}
+.contact-address{margin-top: 50px;}
+.contact-info { display: flex; position: relative; align-items: center; flex-wrap: wrap; margin-bottom: 48px;}
+.contact-info span{position: relative; font-size: 16px; display: inline-block; text-align: center; line-height: 40px; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; top: -1px; margin-right: 24px; width: 40px; color: var( --heading); z-index: 1;}
+.contact-info span::after{ content: ""; background: var(--yellow); width: 40px; height: 40px; display: block; border-radius: 50%; position: absolute; z-index: -1; left: 0; top: 0; }
+.contact-info .text a{font-size: 1.25rem; font-family: Satoshi;}
+.contact-info .text p{line-height: 1.7; font-size: 1.125rem; font-weight: normal;}
+.contact-info:nth-child(1) span{transform: rotate(45deg);}
+.contact-info:nth-child(1){margin-bottom: 24px;}
+.contact-map{z-index: -1; display: block; width: 841px; height: 741px; bottom: 0; right: 0;}
+
+

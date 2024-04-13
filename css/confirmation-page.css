@@ -5,11 +5,11 @@
 .confirmation-text{margin: auto; max-width: 520px; text-align: center;}
 .confirmation-text .tick-icon{margin-bottom: 7px;}
 .confirmation-text .tick-icon img{width: 24px; height: 24px;}
-.confirmation-text h1 span{position: relative;}
-.confirmation-text h1 span svg{position: absolute; left: 42px; bottom: -13px;}
+.confirmation-text h1 span{position: relative; display: inline-block;}
+.confirmation-text h1 span::before{position: absolute; content: ""; left: 42px; bottom: -13px; display: block; background-image: url("../images/confirmation-line.svg"); width: 209px; height: 17px;}
 .confirmation-text p{font-size: 1.125rem; color: var(--heading); line-height: 1.7; margin-bottom: 24px;}
 
-
+  
 /* media css starts here */
 @media only screen and (max-width: 1299px) and (min-width: 1024px) {
     .confirmation-vector{left: -30px;}
@@ -24,7 +24,7 @@
     .confirmation-main{min-height: 551px; padding: 140px 0 80px;}
     .confirmation-vector{width: 514px; left: -159px; top: 80px;}
     .confirmation-text h1{font-size: 2.5rem; margin-bottom: 25px;}
-    .confirmation-text h1 span svg{left: 58px;}
+    .confirmation-text h1 span::before{left: 58px; background-image: url("../images/confirmation-line-mobile.svg"); width: 128px; height: 12px;}
     .confirmation-text p{margin-bottom: 25px; line-height: 1.7;}
     .confirmation-thumb { right: -153px; top: 216px; width: 300px; transform: rotate(7.5deg);}
 }
