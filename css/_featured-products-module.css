@@ -1,0 +1,89 @@
+.featured-products-module {width: 100%; padding: 91px 0 99px; position: relative; z-index: 1; clear: both;}
+.featured-products-main {border: solid 1px var(--outline-btn); border-radius: 16px; border-bottom: 0 none; border-left: 0 none;}
+
+.featured-products-grid {width: 25%; border-left: 1px solid var(--outline-btn); padding:31px; box-sizing: border-box; position: relative;
+  min-height: 331px; border-bottom: 1px solid var(--outline-btn); background: var(--white);}
+.featured-products-grid:last-child {flex-grow: 1; border-bottom-right-radius: 16px;}
+.featured-products-grid:first-child {border-top-left-radius: 16px;}
+.featured-products-grid:nth-child(4) {border-top-right-radius: 16px;}
+
+
+.featured-products-grid .featured-products-inner {height: 100%; display: flex;}
+.featured-products-grid-inner {width: 100%; display: flex; align-items: flex-end; height: 100%;}
+
+.featured-products-grid .val-cnt {display: flex; flex-wrap: wrap; width: 100%;}
+.featured-products-grid .val-cnt .h3 {font-weight: 500; margin: auto 0 0 0;}
+.featured-products-grid .fp-icon {width: 64px; height: 64px; clear: both; position: absolute; z-index: 2; left: 32px; top: 31px;  transition: .5s ease;}
+.featured-products-grid .fp-icon span {display: block;}
+.featured-products-grid .fp-icon svg {width: 100%; height: 100%;}
+
+.featured-products-grid:hover .fp-icon {left:21px; top:14px; width: 31px; height: 31px;}
+.featured-products-grid:hover .fp-icon svg path {fill:var(--yellow);}
+.featured-products-grid:hover .overlay-desc .h3 {color: var(--white); margin-bottom: 26px;}
+.featured-products-grid:hover .overlay-desc .h3 a {color: var(--white);}
+.featured-products-grid:hover .overlay-desc .h3 a:hover {color: var(--yellow);}
+.featured-products-grid:hover .overlay-desc p {display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 25px;}
+.featured-products-grid:hover .overlay-desc .button {min-width: 150px;}
+
+.overlay-inner-text {height: 100%; display: flex;  align-items: flex-end;}
+.overlay-txt {position: absolute; bottom: -18px; left: -11px; right: 0; background-color: var(--heading); width:calc(100% + 22px); height: 0; transition: .5s ease; overflow-y: auto; color: var(--outline-btn); z-index: 1;  padding: 80px 32px 32px; opacity: 0; visibility: hidden;}
+.featured-products-grid:hover .overlay-txt {height: calc(100% + 36px); opacity: 1; visibility: visible;}
+
+.overlay-desc {z-index: 1; position: relative; height: 100%; overflow-y: auto; -ms-overflow-style: none; scrollbar-width: none; display: flex;
+  flex-direction: column; align-items: flex-start; justify-content: flex-end;}
+.overlay-desc::-webkit-scrollbar {display: none;}
+
+.featured-products-grid.yellow-grid {background: var(--yellow); padding: 32px; border: 0 none; overflow:hidden;}
+.featured-products-grid.yellow-grid .fp-lt {width: 297px;}
+.featured-products-grid.yellow-grid .fp-lt .avanta-icon {width: 24px; height: 20px; line-height: 0; margin: 0 0 28px 0;}
+.featured-products-grid.yellow-grid .fp-lt .h3 {font-size: 1.75rem; font-weight: 500; color: var(--heading); line-height: normal; margin-bottom: 29px;}
+.featured-products-grid.yellow-grid .fp-lt p {font-weight: 500; color: var(--heading); line-height: normal; margin-bottom: 29px; max-width: 215px}
+.featured-products-grid.yellow-grid .fp-lt .button {min-width: 134px;}
+.featured-products-grid.yellow-grid .fp-rt {width:calc(100% - 297px); position: relative;}
+.featured-products-grid.yellow-grid .fp-rt figure {width: 384.458px; height: 584px; transform: rotate(45deg); position: absolute; right:-99.588px; bottom: -159.588px;}
+   
+
+
+@media only screen and (max-width: 1160px) and (min-width: 1024px) {
+    .featured-products-grid.yellow-grid .fp-rt figure {right: -185.588px;}
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .featured-products-grid {border-top: 1px solid var(--outline-btn); border-bottom:0 none;}
+    .featured-products-grid:nth-child(2n) {border-right: 1px solid var(--outline-btn);}
+}
+@media only screen and (max-width: 1023px) and (min-width: 200px) {
+  .overlay-txt {display: none;}
+    .featured-products-main {border: 0 none;}
+    .featured-products-grid {width: 50%; min-height: inherit;}
+    .featured-products-grid .val-cnt {align-items: center;}
+    .featured-products-grid .val-cnt .h3 {margin: 0; width: calc(100% - 72.5px); flex-grow: 1;}
+    .featured-products-grid .fp-icon, .featured-products-grid:hover .fp-icon {position: static; width: 46.5px; height: 46.5px; margin-right: 26px;}
+    .featured-products-grid.yellow-grid:last-child {border-bottom-left-radius: 16px;}
+    .featured-products-grid:nth-child(2) {border-top-right-radius: 16px;}
+    .featured-products-grid:nth-child(4) {border-radius:0;}
+    
+    .featured-products-grid.yellow-grid .fp-lt {width: 340px;}
+    .featured-products-grid.yellow-grid .fp-lt p {max-width: 315px;}
+    .featured-products-grid.yellow-grid .fp-rt {width: calc(100% - 340px);}
+    
+    
+}
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+    .featured-products-grid {width: 100%; padding: 24px; border-bottom: 0 none; border-top: 1px solid var(--outline-btn); border-right: 1px solid var(--outline-btn);}
+        .featured-products-grid:nth-child(1) {border-top-right-radius: 16px;}
+        .featured-products-grid:nth-child(2) {border-top-right-radius: 0;}
+    .featured-products-grid .val-cnt .h3 {font-size: 1.25rem; line-height: normal;}
+    .featured-products-grid .fp-icon, .featured-products-grid:hover .fp-icon {margin-right: 24px;}
+    
+    .featured-products-grid.yellow-grid {padding: 24px 16px;}    
+    .featured-products-grid.yellow-grid .fp-lt {width: 100%;}
+    .featured-products-grid.yellow-grid .fp-lt .h3 {font-size: 1.5rem; margin-bottom: 24px;}
+    .featured-products-grid.yellow-grid .fp-lt p {max-width: 100%; padding-right: 60px; margin-bottom: 24px;}
+    .featured-products-grid.yellow-grid .fp-lt .avanta-icon {margin: 0 0 23px 0;}
+    .featured-products-grid.yellow-grid .fp-rt {width: 100%;}
+    .featured-products-grid.yellow-grid .fp-rt figure {width: 199.441px; height: 302.955px; right: -112.248px; bottom: -183.061px;}
+    
+
+
+  
+}

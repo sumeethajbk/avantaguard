@@ -1,0 +1,13 @@
+@import url("../css/_hero-banner.css");
+@import url("../css/_short-intro-section.css");
+@import url("../css/_repeater-section.css");
+@import url("../css/_cta-module.css");
+@import url("../css/_faq-block.css");
+@import url("../css/_featured-products-module.css");
+
+
+.home-wrap {background: var(--light-txt);}
+
+@media only screen and (max-width: 767px) and (min-width: 200px) {
+   
+}
