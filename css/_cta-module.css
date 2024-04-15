@@ -2,7 +2,7 @@
 .cta-wrap {justify-content: space-between; background: var(--yellow);}
 .cta-lt {width: 56.666666666666664%; padding: 80px; background: var( --heading); color: var(--light-txt); position: relative;}
 .cta-lt .h2 { color: var(--light-txt); font-size: 2.5rem; font-weight: 600; line-height: 1.2; margin-bottom: 24px;}
-.cta-lt .h2 span svg {right: 19px; bottom: -22px; width: 209.7px; height: 18.3px;}
+.cta-lt .h2 span::before {right: 21px; bottom: -22px; width: 209px; height: 17px; position: absolute; display: block; content: ""; background-image: url("../images/banner-heading-line.svg");}
 .cta-lt .optional-text {color: var(--light-txt);}
 .cta-lt p {margin-bottom: 24px;}
 .cta-lt .avanta-icon {opacity: 0.1; bottom: 0; right: -106px; width: 509px; height:428px;}
@@ -23,7 +23,7 @@
     .cta-lt {width: 100%; padding:37px 16px 40px;}
     .cta-lt .optional-text {margin: 0 0 26px 0;}
     .cta-lt .avanta-icon {display: none;}
-    .cta-lt .h2 span svg {right:27px; bottom: -10px; width:128px; height: 12px;}
+    .cta-lt .h2 span::before {right:20px; bottom: -10px; width:128px; height: 12px; background-image: url("../images/banner-mobile-heading-line.svg");}
     .cta-lt p {margin-bottom: 23px;}
     .cta-rt {display: none;}
 }

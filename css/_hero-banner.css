@@ -9,7 +9,7 @@
 .hero-banner-section .hero-banner-main .hero-banner-image .banner-img picture {opacity: 40%; mix-blend-mode: multiply;}
 .hero-banner-section .hero-banner-wrap {max-width: 1700px; margin: 0 auto;}
 .hero-banner-section .hero-banner-main .hero-banner-txt h1 span{position: relative; display: inline-block}
-.hero-banner-section .hero-banner-main .hero-banner-txt h1 span::before{position: absolute; right: -17px; bottom: -10px; width: 209.7px; height: 18.3px; background-image: url("../images/banner-heading-line.svg"); z-index: -1;}
+.hero-banner-section .hero-banner-main .hero-banner-txt h1 span::before{position: absolute; content:""; right: -17px; bottom: -10px; width: 209px; height: 17px; background-image: url("../images/banner-heading-line.svg"); z-index: -1;}
 
 
 /*-- media starts here --*/
@@ -47,6 +47,6 @@
     .hero-banner-section .hero-banner-main .hero-banner-txt p {line-height: 1.5;}
     .hero-banner-section .hero-banner-main .hero-banner-image {min-height: 250px; height: inherit;}
     
-
+    .hero-banner-section .hero-banner-main .hero-banner-txt h1 span::before{background-image: url("../images/banner-mobile-heading-line.svg"); width: 128px; height: 12px; right: 3px; bottom: -12px;}
 
 }

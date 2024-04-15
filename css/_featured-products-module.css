@@ -1,4 +1,4 @@
-.featured-products-module {width: 100%; padding: 91px 0 99px; position: relative; z-index: 1; clear: both;}
+.featured-products-module {width: 100%; padding: 91px 0 99px; position: relative; z-index: 1; clear: both; background-color: var(--light-txt);}
 .featured-products-main {border: solid 1px var(--outline-btn); border-radius: 16px; border-bottom: 0 none; border-left: 0 none;}
 
 .featured-products-grid {width: 25%; border-left: 1px solid var(--outline-btn); padding:31px; box-sizing: border-box; position: relative;
@@ -25,6 +25,14 @@
 .featured-products-grid:hover .overlay-desc p {display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 25px;}
 .featured-products-grid:hover .overlay-desc .button {min-width: 150px;}
 
+.fp-icon-main{z-index: 2;}
+.fp-icon-img{width: 64px; height: 64px; transition: 0.5s ease;}
+.fp-icon-img img{object-fit: contain;}
+.fp-icon-hover{visibility: hidden; opacity: 0;  top: 0; left: 0;}
+.featured-products-grid:hover .fp-icon-img{opacity: 0; visibility: hidden;}
+.featured-products-grid:hover .fp-icon-hover{width: 31px; height: 31px; top: -10px; left: -10px; opacity: 1; visibility: visible;}
+
+
 .overlay-inner-text {height: 100%; display: flex;  align-items: flex-end;}
 .overlay-txt {position: absolute; bottom: -18px; left: -11px; right: 0; background-color: var(--heading); width:calc(100% + 22px); height: 0; transition: .5s ease; overflow-y: auto; color: var(--outline-btn); z-index: 1;  padding: 80px 32px 32px; opacity: 0; visibility: hidden;}
 .featured-products-grid:hover .overlay-txt {height: calc(100% + 36px); opacity: 1; visibility: visible;}
@@ -43,6 +51,11 @@
 .featured-products-grid.yellow-grid .fp-rt figure {width: 384.458px; height: 584px; transform: rotate(45deg); position: absolute; right:-99.588px; bottom: -159.588px;}
    
 
+
+/*** Responsive ***/
+@media only screen and (min-width:1024px) {
+
+}
 
 @media only screen and (max-width: 1160px) and (min-width: 1024px) {
     .featured-products-grid.yellow-grid .fp-rt figure {right: -185.588px;}
@@ -81,7 +94,7 @@
     .featured-products-grid.yellow-grid .fp-lt p {max-width: 100%; padding-right: 60px; margin-bottom: 24px;}
     .featured-products-grid.yellow-grid .fp-lt .avanta-icon {margin: 0 0 23px 0;}
     .featured-products-grid.yellow-grid .fp-rt {width: 100%;}
-    .featured-products-grid.yellow-grid .fp-rt figure {width: 199.441px; height: 302.955px; right: -112.248px; bottom: -183.061px;}
+    .featured-products-grid.yellow-grid .fp-rt figure { width: 199.441px; height: 302.955px; right: -33.248px; bottom: -157.061px; }
     
 
 

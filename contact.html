@@ -178,8 +178,9 @@
                         <a href="#" class="button outline-btn">View Map</a>
                     </div>
                     <div class="contact-map pos-absolute">
-                        <figure class="object-fit">
-                            <img src="images/map-image@2x.jpg" alt="map-image">
+                        <picture class="object-fit">
+                          <source srcset="images/map-image@2x.png" media="(min-width: 768px)">
+                          <img src="images/map-image-mobile@2x.jpg" alt="map-image">
                         </figure>
                     </div>
                 </div>
@@ -231,27 +232,38 @@
     </section>
 
 <section class="contact-module">
-    <div class="container">
-      <div class="contact-wrap">
-        <div class="contact-main flex">
+  <div class="container">
+    <div class="container-md">
+      <div class="contact-wrap pos-relative">
+        <div class="contact-intro-main flex">
             <div class="contact-list">
                 <div class="contact-row flex">
-                    <figure><img src="images/contact-icon-one.svg" alt="contact-icon-one"></figure>
-                    <h2>Frequently Asked Questions</h2>
+                    <div class="contact-icon">
+                      <figure class="object-fit"><img src="images/contact-icon-one.svg" alt="contact-icon-one"></figure>
+                    </div>
+                    <div class="contact-cont"><h2>Frequently Asked <span>Questions</span></h2></div>
                 </div>
                 <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur ultrices.</p>
-                <a href="#" class="button">CTA button</a>
+                <a href="#" class="button">Read FAQ</a>
             </div>
             <div class="contact-list">
                 <div class="contact-row flex">
-                  <figure><img src="images/contact-icon-two.svg" alt="contact-icon-two"></figure>
-                  <h2>Frequently Asked Questions</h2>
+                  <div class="contact-icon">
+                    <figure class="object-fit"><img src="images/contact-icon-two.svg" alt="contact-icon-two"></figure>
+                  </div>
+                  <div class="contact-cont"><h2>Start a <span>Claim</span></h2></div>
                 </div>
                 <p>Feugiat diam pellentesque at diam scelerisque. Adipiscing mattis mi dignissim velit curabitur ultrices.</p>
-                <a href="#" class="button">CTA button</a>
+                <a href="#" class="button">Read FAQ</a>
             </div>
         </div>
-        <div class="contact"></div>
+        <div class="contact-car-img pos-absolute">
+          <figure class="object-fit">
+            <!-- <source srcset="images/contact-thumb@2x.png" media="(min-width: 768px)"> -->
+            <img src="images/contact-thumb@2x.png" alt="contact-thumb">
+          </figure>
+        </div>
+    </div>
     </div>    
 </section>
 

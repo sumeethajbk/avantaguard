@@ -1,0 +1,28 @@
+@import url("../css/_hero-banner.css");
+@import url("../css/_short-intro-section.css");
+
+@import url("../css/_faq-block.css");
+@import url("../css/_featured-products-module.css");
+
+.hero-banner-section .hero-banner-main .hero-banner-txt h1 span::before {right: 20px; bottom: -20px;}
+.short-intro-section::before {display: none;}
+.faq-block{background-color: transparent;}
+
+
+@media only screen and (min-width: 1024px) {
+    .short-intro-bg{top: 20px;}
+    .short-intro-wrap{padding: 80px 0 120px;}
+    .featured-products-module{padding: 0 0 100px;}
+
+
+}
+@media only screen and (max-width: 1023px) and (min-width:768px){
+    .featured-products-module {padding: 0 0 80px;}
+
+
+}
+@media only screen and (max-width: 767px) and (min-width:200px){
+    .featured-products-module{padding: 20px 0;}
+
+    .hero-banner-section .hero-banner-main .hero-banner-txt h1 span::before { right: 3px; bottom: -12px; }
+}

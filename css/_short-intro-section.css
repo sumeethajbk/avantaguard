@@ -1,11 +1,11 @@
-.short-intro-section{ clear: both; width: 100%; overflow: hidden; background-color: #f5f5f5; z-index: 1;}
+.short-intro-section{ clear: both; width: 100%; overflow: hidden; background-color: var(--light-txt); z-index: 1;}
 .short-intro-bg{ z-index: -1;}
 .short-intro-bg img{ margin: 0 auto;}
 .short-intro-wrap{padding: 80px 0;}
 .short-intro-main{position: relative; max-width: 1090px;}
 .short-intro-lt h2{font-size: 2.5rem; margin-bottom: 23px;}
 .short-intro-lt h2 span{position: relative;}
-.short-intro-lt h2 span svg{position: absolute; bottom: 0; left: 0; content: ""; display: block;}
+.short-intro-lt h2 span::before{position: absolute; content:""; bottom: 0; left: 20px; width: 107px; height: 7px; display: block; background-image: url("../images/short-line.svg");}
 .short-intro-rt p{font-size: 1.125rem; line-height: 1.7;}
 .short-intro-row{padding: 80px 0 0; justify-content: center;}
 .short-intro-list img {margin: 0;}
@@ -13,6 +13,9 @@
 .short-intro-icon{background-image: url("../images/tick-yellow.svg"); display: block; width: 24px; height: 24px; background-size: cover; background-position: center; margin-bottom: 15px;}
 .short-intro-list:nth-child(even) .short-intro-icon{background-image: url("../images/tick-icon.svg");}
 .short-intro-section::before { background: var(--outline-btn); content: ""; display: block; width: 100%; height: 6px; max-width: 1090px; margin: 0 auto; position: absolute; bottom: 0; left: 0; right: 0; }
+
+.short-intro-wrap.no_main .short-intro-row{padding: 0;}
+
 /* media starts here */
 @media only screen and (min-width: 1200px) {
    .short-intro-bg{top: -15px; left: 50%; transform:  translateX(-50%); width: 713px; height: 600px;}
@@ -46,11 +49,10 @@
     .short-intro-wrap{padding: 40px 0 0;}
     .short-intro-bg{top: 0; left: -70px; width: 671px; height: 565px;}
     .short-intro-lt h2{font-size: 2rem;}
-    .short-intro-lt h2 span svg{left: 11px; bottom: -4px;}
     .short-intro-rt{margin-top: 24px;}
     .short-intro-row{padding: 58px 0 0;}
     .short-intro-list{width: 295px; margin-right: 20px;}
 
     .short-intro-row .slick-list {overflow: inherit;}
-
+    .short-intro-lt h2 span::before {bottom: -2px; left: 13px;}
 }

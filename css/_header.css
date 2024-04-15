@@ -16,6 +16,7 @@
 .main_header .header .nav-btn .outline-btn:after {display: none;}
 .main_header .header .nav-btn .button span  {color: var(--yellow); margin-left: 10px; font-size: 13px;}
 
+
 /*** Responsive ***/
 @media only screen and (min-width:1024px) {
     ul.main_menu {  margin: 0; font-size: 0;}
@@ -56,6 +57,13 @@
     ul.main_menu li.flex-menu > ul > li > a {padding: 32px; display: flex; flex-direction: column; align-items: flex-start; height: 100%; width: 100%;}
     ul.main_menu li.flex-menu > ul > li > a span svg {height: 48px; width: 48px; margin-bottom: 2px;}
     ul.main_menu li.flex-menu > ul > li > a:hover span svg path {fill:var(--yellow);}
+
+    
+    .menu-icon-main{position: relative;}
+    .menu-icon-main img{width: 48px; height: 48px;}
+    .menu-icon-hover{visibility: hidden; opacity: 0; position: absolute; top: 0; left: 0;}
+    ul.main_menu li.flex-menu > ul > li > a:hover .menu-icon{opacity: 0; visibility: hidden;}
+    ul.main_menu li.flex-menu > ul > li > a:hover .menu-icon-hover{opacity: 1; visibility: visible;}
 }
 
 
